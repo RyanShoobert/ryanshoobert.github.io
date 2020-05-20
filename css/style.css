@@ -1,3 +1,8 @@
+@font-face {
+  font-family: LibreBaskerville;
+  src: url(fonts/LibreBaskerville-Regular.ttf);
+}
+
 body {
 	padding:0;
 	margin:0;
@@ -21,7 +26,7 @@ nav {
 	margin:0;
 	grid-area: nav;
 	text-align:center;
-	border-bottom:1px solid #b4146e;	
+	border-bottom:1px solid #000;	
 	position:sticky;
 	top:0;
 	z-index:6;
@@ -46,13 +51,29 @@ nav ul li a {
 	color:#575755;
 }
 
+nav ul li a:hover {
+	color:#000;
+}
+
 main {
-	height:2000px;
+	padding:15px 50px;
+	margin:0;
+}
+
+.top-bar {
+	background-color:#000;
+	width:100%;
+	height:30px;
 }
 
 .logo { 
 	grid-area:logo;
 	text-align:center;
+}
+
+#logo-text {
+	font-family: LibreBaskerville;
+	font-size:2.1em;
 }
 
 .center {
@@ -61,6 +82,34 @@ main {
 }
 
 .profile-info { 
-	grid-area: profile-info;
+	grid-area:profile-info;
 	text-align:center;
+	line-height:87.0333px;
 }
+
+.profile-info a {
+  padding: 10px;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  width:50px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #25BFEA;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #000;
+  color: white;
