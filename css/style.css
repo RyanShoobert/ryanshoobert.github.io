@@ -15,7 +15,7 @@ header {
 	padding:0;
 	margin:0px auto;
 	width:90%;
-	grid-template-columns:1fr 5fr 1fr;
+	grid-template-columns:1fr 3fr 1fr;
 	grid-template-rows:1fr;
 	gap:0px 1px;
 	grid-template-areas:"logo center profile-info ." ". . . ." ". . . .";
