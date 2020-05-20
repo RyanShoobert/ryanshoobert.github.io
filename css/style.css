@@ -2,47 +2,65 @@ body {
 	padding:0;
 	margin:0;
 	width:100%;
-	font-family:sans-serif;
-	color:#fff;
+	font-size:1em;
 }
 
-#nav {
+header {
+	display:grid;
 	padding:0;
-	margin:0;
-	width:100%;
-	background-color:#2A3538;
-	display:inline-flex;
+	margin:0px auto;
+	width:90%;
+	grid-template-columns:1fr 5fr 1fr;
+	grid-template-rows:1fr;
+	gap:0px 1px;
+	grid-template-areas:"logo center profile-info ." ". . . ." ". . . .";
 }
 
-#nav #logo {
-	padding:0;
+nav { 
+	padding:10px;
 	margin:0;
-	width:20%;
+	grid-area: nav;
 	text-align:center;
-	font-weight:bold;
-	line-height:40px;
+	border-bottom:1px solid #b4146e;	
+	position:sticky;
+	top:0;
+	z-index:6;
 }
 
-#nav ul {
+nav ul {
 	padding:0;
 	margin:0;
-	width:80%;
+}
+
+nav ul li {
+	padding:0;
+	margin:0;
 	list-style:none;
-	text-align:right;
+	display:inline;
 }
 
-#nav ul li {
+nav ul li a {
 	padding:10px 30px;
-	display:inline-block;
-	border-bottom:3px solid #2A3538;
-}
-
-#nav ul li:hover {
-	background-color:#435559;
-	border-bottom:3px solid #25BFEA;
-}
-
-#nav ul li a {
+	margin:0;
 	text-decoration:none;
-	color:#fff;
+	color:#575755;
+}
+
+main {
+	height:2000px;
+}
+
+.logo { 
+	grid-area:logo;
+	text-align:center;
+}
+
+.center {
+	grid-area:center;
+	text-align:center;
+}
+
+.profile-info { 
+	grid-area: profile-info;
+	text-align:center;
 }
