@@ -113,3 +113,47 @@ main {
 .fa-github {
   background: #000;
   color: white;
+	font-family:sans-serif;
+	color:#fff;
+}
+
+#nav {
+	padding:0;
+	margin:0;
+	width:100%;
+	background-color:#2A3538;
+	display:inline-flex;
+}
+
+#nav #logo {
+	padding:0;
+	margin:0;
+	width:20%;
+	text-align:center;
+	font-weight:bold;
+	line-height:40px;
+}
+
+#nav ul {
+	padding:0;
+	margin:0;
+	width:80%;
+	list-style:none;
+	text-align:right;
+}
+
+#nav ul li {
+	padding:10px 30px;
+	display:inline-block;
+	border-bottom:3px solid #2A3538;
+}
+
+#nav ul li:hover {
+	background-color:#435559;
+	border-bottom:3px solid #25BFEA;
+}
+
+#nav ul li a {
+	text-decoration:none;
+	color:#fff;
+}
