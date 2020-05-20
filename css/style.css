@@ -1,48 +1,115 @@
+@font-face {
+  font-family: LibreBaskerville;
+  src: url(fonts/LibreBaskerville-Regular.ttf);
+}
+
 body {
 	padding:0;
 	margin:0;
 	width:100%;
-	font-family:sans-serif;
-	color:#fff;
+	font-size:1em;
 }
 
-#nav {
+header {
+	display:grid;
 	padding:0;
-	margin:0;
-	width:100%;
-	background-color:#2A3538;
-	display:inline-flex;
+	margin:0px auto;
+	width:90%;
+	grid-template-columns:1fr 5fr 1fr;
+	grid-template-rows:1fr;
+	gap:0px 1px;
+	grid-template-areas:"logo center profile-info ." ". . . ." ". . . .";
 }
 
-#nav #logo {
-	padding:0;
+nav { 
+	padding:10px;
 	margin:0;
-	width:20%;
+	grid-area: nav;
 	text-align:center;
-	font-weight:bold;
-	line-height:40px;
+	border-bottom:1px solid #000;	
+	position:sticky;
+	top:0;
+	z-index:6;
 }
 
-#nav ul {
+nav ul {
 	padding:0;
 	margin:0;
-	width:80%;
+}
+
+nav ul li {
+	padding:0;
+	margin:0;
 	list-style:none;
-	text-align:right;
+	display:inline;
 }
 
-#nav ul li {
+nav ul li a {
 	padding:10px 30px;
-	display:inline-block;
-	border-bottom:3px solid #2A3538;
-}
-
-#nav ul li:hover {
-	background-color:#435559;
-	border-bottom:3px solid #25BFEA;
-}
-
-#nav ul li a {
+	margin:0;
 	text-decoration:none;
-	color:#fff;
+	color:#575755;
 }
+
+nav ul li a:hover {
+	color:#000;
+}
+
+main {
+	padding:15px 50px;
+	margin:0;
+}
+
+.top-bar {
+	background-color:#000;
+	width:100%;
+	height:30px;
+}
+
+.logo { 
+	grid-area:logo;
+	text-align:center;
+}
+
+#logo-text {
+	font-family: LibreBaskerville;
+	font-size:2.1em;
+}
+
+.center {
+	grid-area:center;
+	text-align:center;
+}
+
+.profile-info { 
+	grid-area:profile-info;
+	text-align:center;
+	line-height:87.0333px;
+}
+
+.profile-info a {
+  padding: 10px;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  width:50px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #25BFEA;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #000;
+  color: white;
