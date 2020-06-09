@@ -13,7 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: Validate files
-      uses: Cyb3r-Jak3/html5validator-action@master
+    - name: HTML5 Validator
+      uses: Cyb3r-Jak3/html5validator-action@v0.4
       with:
         css: true
+        action_debug: true
