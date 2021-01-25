@@ -154,3 +154,45 @@ footer {
 	padding:0;
     margin:0;
 }
+
+/* Desktop design */
+
+@media screen and (min-width: 800px) {
+	.div2 { 
+		display:none;
+	}
+	
+	#main-nav {
+		display:block;
+	}
+
+	#main-nav ul {
+		margin:-50px 5px 0 0;
+		float:right;
+	}
+
+	#main-nav ul li {
+		display: inline-block;
+	}
+
+	#main-nav ul li a {
+		padding:15px;
+		width:100%;
+		list-style: none;
+	}
+
+	.special #github {
+		background-color:#0000;
+		width:20px;
+	}
+
+	.special #linkedin {
+		background-color:#0000;
+		width:20px;
+	}
+
+	.special #twitter {
+		background-color:#0000;
+		width:20px;
+	}
+}
