@@ -47,21 +47,22 @@ footer {
     
 }
 
-.main-nav {
+#main-nav {
+	display:none;
     width:100%;
 }
 
-.main-nav ul {
+#main-nav ul {
     padding:0;
     margin:0;
 }
 
-.main-nav ul li {
+#main-nav ul li {
 	list-style: none;
 	display:flex;
 }
 
-.main-nav ul li a {
+#main-nav ul li a {
 	padding:15px;
 	width:100%;
     text-align:center;
@@ -69,7 +70,7 @@ footer {
     background:#262b33;
 }
 
-.main-nav ul li a:hover {
+#main-nav ul li a:hover {
     background:#00b6ff;
 }
 
