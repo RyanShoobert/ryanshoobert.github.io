@@ -1,49 +1,104 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Home</title>
+    <head>
+	    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+        <title>Home</title>
 
-	<!-- Link To Favicon -->
-	<link rel="shortcut icon" href="images/lj_favicon.ico">
+        <!-- Link To Favicon -->
+        <link rel="shortcut icon" href="images/lj_favicon.ico">
 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta charset="utf-8"/>		<!--character encoding for the document (Unicode) -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!--character encoding for the document (Unicode) -->
+        <meta charset="utf-8"/>
 
-	<!-- ensures that the page is displayed full size, regardless of the viewing device' -->
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	</head>
-  
-  <body>
-    <div class="top-bar"></div>
+        <!-- ensures that the page is displayed full size, regardless of the viewing device' -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <script src="script/index.js"></script> 
+    </head>
 
-    <header>	
-      <div class="logo"></div>
-      <div class="center">
-        <h1 id="logo-text">Ryan Shoobert</h1>
-      </div>
-      <div class="profile-info">
-        <a href="#" class="fa fa-linkedin"></a>
-        <a href="#" class="fa fa-github"></a>
-        <a href="#" class="fa fa-twitter"></a> 
-      </div>
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href=#>Home</a></li>
-        <li><a href=#>Portfolio</a></li>
-        <li><a href=#>Contact Me</a></li>
-      </ul>
-    </nav>
-
-    <main>
-      <h1>Welcome</h1>
-      <p>
-        Hello there and welcome to my website!
-      </p>
-    </main>
-  </body>
+    <body>
+        <header class="parent">
+            <div class="div1"><h2><i class="fas fa-code"></i> Ryan Shoobert</h2></div>
+            <div class="div2"><h2 class="noSelect" onclick="openMobileNav()">&#9776;</h2></div>            
+        </header>
+        
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact Me</a></li>
+                <li class="special">
+					<a href="#" class="fab fa-github" id="github"></a>
+					<a href="#" class="fab fa-linkedin" id="linkedin"></a>
+					<a href="#" class="fab fa-twitter" id="twitter"></a>
+				</li>
+            </ul>
+        </nav>
+        
+        <main>
+            <h1>Welcome 👋</h1>          
+            <p>		
+            I'm ryan and I'm a team-oriented and self-motivated Computer Science student with a track record for a variety of successful projects, 
+            predominantly in software. Proficient in the design and engineering of software, I have experience in a
+            variety of programming languages and developer tools. Familiar with delivering presentations to peers about the nature 
+            of my work in a visual and engaging manner. Driven and enthusiastic to explore new technologies and their
+            impact on future work.
+            </p>
+            
+            <h1>What can I do?</h1>
+            <div id="tag-container">
+                <div class="programming-tag">ASP.NET Core</div>
+                <div class="programming-tag">Java</div>
+                <div class="programming-tag">Golang</div>
+                <div class="programming-tag">SQL</div>
+                <div class="programming-tag">HTML/CSS</div>
+                <div class="cloud-tag">Docker</div>
+                <div class="cloud-tag">Openshift</div>
+                <div class="cloud-tag">AWS SQS</div>
+                <div class="tooling-tag">Git</div>
+                <div class="tooling-tag">Gradle</div>
+                <div class="tooling-tag">NuGet</div>
+                <div class="tooling-tag">Firebase</div>
+                <div class="misc-tag">Problem solving</div>
+                <div class="misc-tag">Communication</div>
+                <div class="misc-tag">Documentation Production</div>
+            </div>
+			
+			<h1>What do I want to do?</h1>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Mattis vulputate enim nulla aliquet porttitor lacus luctus. Interdum consectetur libero id faucibus nisl. Ac odio tempor orci 
+			dapibus ultrices in. Maecenas sed enim ut sem viverra aliquet eget sit amet. Mollis aliquam ut porttitor leo a diam sollicitudin. 
+			Non tellus orci ac auctor augue mauris augue neque gravida. Iaculis nunc sed augue lacus viverra vitae congue eu. Eu turpis egestas 
+			pretium aenean. Nisi porta lorem mollis aliquam ut porttitor.
+			</br></br>
+			Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Orci a scelerisque purus semper eget duis at tellus. Pulvinar 
+			pellentesque habitant morbi tristique. In nulla posuere sollicitudin aliquam ultrices. Eu volutpat odio facilisis mauris sit amet 
+			massa vitae. At augue eget arcu dictum varius duis. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Volutpat diam 
+			ut venenatis tellus in metus vulputate eu scelerisque. A lacus vestibulum sed arcu. Phasellus vestibulum lorem sed risus ultricies 
+			tristique nulla aliquet. Mi ipsum faucibus vitae aliquet nec. A erat nam at lectus urna duis. At erat pellentesque adipiscing commodo
+			elit at imperdiet dui accumsan. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Pellentesque adipiscing 
+			commodo elit at imperdiet dui accumsan sit amet. Vitae nunc sed velit dignissim. Vulputate dignissim suspendisse in est ante in. 
+			Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Quis eleifend quam adipiscing vitae proin sagittis.
+			</p>
+			
+			<h1>Past projects</h1>
+			<div class="project-container">
+				<div id="project">
+					<h3>Architecture Engineer</h3>
+					<p>Placeholder</p>
+				</div>
+				<div id="project">
+					<h3>FÜD</h3>
+					<p>Placeholder</p>
+				</div>
+			</div>
+			
+			<h1>Get in touch!</h1>
+			<p>Form goes here...</p>
+        </main>
+    </body>
 </html>
