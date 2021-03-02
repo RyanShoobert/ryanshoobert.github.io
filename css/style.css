@@ -146,6 +146,23 @@ footer {
 	background-color:#262b33;
 }
 
+.project-container #project img {
+	padding: 0;
+	margin: 15px 0 0 0;
+	width: 100%;
+}
+
+.project-container #button a {
+	padding: 7px;
+	margin: 7px 0;
+	background-color: #238636;
+	display: block;
+}
+
+.project-container #button a:hover {
+	background-color: #156a25;
+}
+
 .project-container h3 {
 	padding:0;
     margin:0;
@@ -163,12 +180,17 @@ footer {
 	margin: 0 0 15px 0;
 	font-family: inherit;
 	font-size: 0.9em;
+	resize: vertical;
 }
 
 #contact form input[type=submit] {
 	background-color: #238636;
 	color: white;
 	border: none;
+}
+
+#contact form input[type=submit]:hover {
+	background-color: #156a25;
 }
 
 /* Desktop design */
@@ -249,6 +271,8 @@ footer {
 		margin: 1%;
 		background-color: #262b33;
 		display: inline-block;
+		min-height: 350px;
+		vertical-align: top;
 	}
 	
 	#contact {
