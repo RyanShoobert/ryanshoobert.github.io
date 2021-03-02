@@ -91,10 +91,6 @@ footer {
 	background-color:#007bb5;
 }
 
-.special #twitter {
-	background-color:#25BFEA;
-}
-
 .main-nav ul li a:hover {
     background:#262b33;
 }
@@ -150,9 +146,51 @@ footer {
 	background-color:#262b33;
 }
 
+.project-container #project img {
+	padding: 0;
+	margin: 15px 0 0 0;
+	width: 100%;
+}
+
+.project-container #button a {
+	padding: 7px;
+	margin: 7px 0;
+	background-color: #238636;
+	display: block;
+}
+
+.project-container #button a:hover {
+	background-color: #156a25;
+}
+
 .project-container h3 {
 	padding:0;
     margin:0;
+}
+
+#contact form {
+	padding: 0;
+	margin: 0;
+	display: inline-grid;
+	width: 100%;
+}
+
+#contact form input, textarea {
+	padding: 7px;
+	margin: 0 0 15px 0;
+	font-family: inherit;
+	font-size: 0.9em;
+	resize: vertical;
+}
+
+#contact form input[type=submit] {
+	background-color: #238636;
+	color: white;
+	border: none;
+}
+
+#contact form input[type=submit]:hover {
+	background-color: #156a25;
 }
 
 /* Desktop design */
@@ -192,16 +230,11 @@ footer {
 		background-color:#0000;
 		width:20px;
 	}
-
-	.special #twitter {
-		background-color:#0000;
-		width:20px;
-	}
 	
 	#welcome {
 		background-color:#262b33;
 		clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
-		height:300px;
+		height:280px;
 		padding:2% 15%;
 		margin:-20px;
 		text-align:center;
@@ -238,6 +271,8 @@ footer {
 		margin: 1%;
 		background-color: #262b33;
 		display: inline-block;
+		min-height: 350px;
+		vertical-align: top;
 	}
 	
 	#contact {
