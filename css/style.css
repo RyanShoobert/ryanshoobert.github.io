@@ -151,6 +151,26 @@ footer {
     margin:0;
 }
 
+#contact form {
+	padding: 0;
+	margin: 0;
+	display: inline-grid;
+	width: 100%;
+}
+
+#contact form input, textarea {
+	padding: 7px;
+	margin: 0 0 15px 0;
+	font-family: inherit;
+	font-size: 0.9em;
+}
+
+#contact form input[type=submit] {
+	background-color: #238636;
+	color: white;
+	border: none;
+}
+
 /* Desktop design */
 
 @media screen and (min-width: 800px) {
@@ -192,7 +212,7 @@ footer {
 	#welcome {
 		background-color:#262b33;
 		clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
-		height:300px;
+		height:280px;
 		padding:2% 15%;
 		margin:-20px;
 		text-align:center;
