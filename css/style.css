@@ -91,10 +91,6 @@ footer {
 	background-color:#007bb5;
 }
 
-.special #twitter {
-	background-color:#25BFEA;
-}
-
 .main-nav ul li a:hover {
     background:#262b33;
 }
@@ -189,11 +185,6 @@ footer {
 	}
 
 	.special #linkedin {
-		background-color:#0000;
-		width:20px;
-	}
-
-	.special #twitter {
 		background-color:#0000;
 		width:20px;
 	}
