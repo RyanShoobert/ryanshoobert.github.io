@@ -15,130 +15,36 @@
 
         <!-- ensures that the page is displayed full size, regardless of the viewing device' -->
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        
-        <script src="script/index.js"></script> 
     </head>
 
     <body>
-        <header class="parent">
-            <div class="logo"><h2><i class="fas fa-code"></i> Ryan Shoobert</h2></div>
-            <div class="hamburger"><h2 class="noSelect" onclick="openMobileNav()">&#9776;</h2></div>  
-
-			<nav class="main-nav">
+        <header id="wrapper">
+			<p id="logo"><i class="fas fa-code"></i> Ryan Shoobert</p>
+			<div id="introduction">
+				<h1><span>Backend Developer</span> and <span>Tinkerer</span> from Hastings, UK</h1>
+				<p>
+					Hi there! My name is Ryan and I’m a Software Engineer at <a href="https://www.asos.com/">ASOS</a>, helping to keep 
+					the fashion world moving. Previously, I worked at <a href="https://worldpay.com">Worldpay</a>. Outside of work, 
+					tech remains my passion and I’m often found tinkering with side projects and 
+					exploring new technologies. I am also a lover of coffee and adding to my ever 
+					growing music collection.
+				</p>
+				<div id="social">
+					<a href="https://www.github.com/RyanShoobert"><i class="fab fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/ryan-shoobert"><i class="fab fa-linkedin"></i></a>
+				</div>
+			</div>
+			<nav id="main-nav">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#project-anchor">Projects</a></li>
-					<li><a href="#contact-anchor">Contact Me</a></li>
-					<li class="special">
-						<a href="https://www.github.com/RyanShoobert" class="fab fa-github" id="github"></a>
-						<a href="https://www.linkedin.com/in/ryan-shoobert" class="fab fa-linkedin" id="linkedin"></a>
-					</li>
+					<li>👇 <a href="#">What I do</a></li>
+					<li>💻 <a href="#">View my projects</a></li>
+					<li>📸 <a href="#">Explore my photos</a></li>
 				</ul>
-			</nav>			
-        </header>
+			</nav>
+		</header>
         
         <main>
-            <section id="welcome">
-				<h1>Welcome 👋</h1>          
-				<p>		
-				Hi there, my name is Ryan and I’m a computer science graduate from the University of 
-				Brighton. I currently work as a software engineer at FIS, helping to keep the payments 
-				world moving! Outside of work, tech remains my passion and I’m often found tinkering 
-				with side projects and exploring new technologies.
-				</p>
-			</section>
-            
-			<section id="what-can-i-do">
-			    <h1>What can I do?</h1>
-				<div id="tag-container">
-					<div class="programming-tag">ASP.NET Core</div>
-					<div class="programming-tag">Java</div>
-					<div class="programming-tag">Golang</div>
-					<div class="programming-tag">SQL</div>
-					<div class="programming-tag">HTML/CSS</div>
-					<div class="cloud-tag">Docker</div>
-					<div class="cloud-tag">Openshift</div>
-					<div class="cloud-tag">AWS SQS</div>
-					<div class="tooling-tag">Git</div>
-					<div class="tooling-tag">Gradle</div>
-					<div class="tooling-tag">NuGet</div>
-					<div class="tooling-tag">Firebase</div>
-					<div class="misc-tag">Problem solving</div>
-					<div class="misc-tag">Communication</div>
-					<div class="misc-tag">Documentation Production</div>
-				</div>
-			</section>
-			
-			<section id="what-i-want">
-				<h1>What do I want to do?</h1>
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-				Mattis vulputate enim nulla aliquet porttitor lacus luctus. Interdum consectetur libero id faucibus nisl. Ac odio tempor orci 
-				dapibus ultrices in. Maecenas sed enim ut sem viverra aliquet eget sit amet. Mollis aliquam ut porttitor leo a diam sollicitudin. 
-				Non tellus orci ac auctor augue mauris augue neque gravida. Iaculis nunc sed augue lacus viverra vitae congue eu. Eu turpis egestas 
-				pretium aenean. Nisi porta lorem mollis aliquam ut porttitor.
-				</br></br>
-				Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Orci a scelerisque purus semper eget duis at tellus. Pulvinar 
-				pellentesque habitant morbi tristique. In nulla posuere sollicitudin aliquam ultrices. Eu volutpat odio facilisis mauris sit amet 
-				massa vitae. At augue eget arcu dictum varius duis. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Volutpat diam 
-				ut venenatis tellus in metus vulputate eu scelerisque. A lacus vestibulum sed arcu. Phasellus vestibulum lorem sed risus ultricies 
-				tristique nulla aliquet. Mi ipsum faucibus vitae aliquet nec. A erat nam at lectus urna duis. At erat pellentesque adipiscing commodo
-				elit at imperdiet dui accumsan. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Pellentesque adipiscing 
-				commodo elit at imperdiet dui accumsan sit amet. Vitae nunc sed velit dignissim. Vulputate dignissim suspendisse in est ante in. 
-				Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Quis eleifend quam adipiscing vitae proin sagittis.
-				</p>
-			</section>
-			
-			<a id="project-anchor"></a>
-			<section id="past-projects">
-				<h1>Past projects</h1>
-				<div class="project-container">
-					<div id="project">
-						<h3>FÜD</h3>
-
-						<img src="img/fud_app_screenshot.png" alt="Screenshot of fud android app">
-
-						<p id="button"><a href="#">Confluence Documentation</a></p>
-						<p id="button"><a href="#">App GitHub Repository</a></p>
-					</div>
-					<div id="project">
-						<h3>Architecture Engineer</h3>
-										
-						<img src="img/architecture_eng_screenshot.png" alt="Screenshot of architecture engineer">
-						
-						<p id="button"><a href="#">Dissertation</a></p>
-						<p id="button"><a href="#">Confluence Documentation</a></p>
-						<p id="button"><a href="#">GitHub Repository</a></p>
-					</div>
-					<div id="project">
-						<h3>This website</h3>
-
-						<img src="img/website_screenshot.png" alt="Screenshot of website">
-
-						<p id="button"><a href="#">GitHub Repository</a></p>
-					</div>
-				</div>
-			</section>
-			
-			<a id="contact-anchor"></a>
-			<section id="contact">
-				<h1>Get in touch!</h1>
-				<form>
-					<label for="fname">First Name</label>
-					<input type="text" id="fname" name="firstname" required placeholder="Your first name">
-				
-					<label for="lname">Last Name</label>
-					<input type="text" id="lname" name="lastname" required placeholder="Your last name">
-
-					<label for="addr">Email Address</label>
-					<input type="email" id="addr" name="lastname" required placeholder="Your email address..">
-
-					<label for="comment">Comment</label>
-					<textarea id="comment" name="comment" required placeholder="Write something" style="height:200px"></textarea>
-				
-					<input type="submit" value="Submit">
-				  </form>
-			</section>
+            <section></section>
         </main>
     </body>
 </html>

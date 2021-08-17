@@ -1,281 +1,68 @@
 body {
-    padding:0;
-    margin:0;
-    width:100%;
-    height:100%;
-    background-color:#06090f;
-    color:#fff;
-    font-size:1em;
-    font-family:calibri, sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #181b20;
+    color: #fff;
+    font-size: 1.1em;
+    font-family: calibri, sans-serif;
 }
 
 a {
-    text-decoration:none;
-    color:#fff;
+    text-decoration: none;
+	color: #fff;
 }
 
-h2 {
-    padding:0;
-    margin:0;
+#wrapper {
+    margin: 2rem;
 }
 
-main {
-    margin:20px;
+#logo {
+    font-size: 1.1em;
 }
 
-footer {
-    text-align:center;
+#introduction {
+    padding-left: 1rem;
+    margin: 3.9rem 0rem;
+    border-left: 2px solid #fff;
 }
 
-.noSelect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+#introduction h1 {
+    line-height: 1.55;
+    font-weight: normal;
 }
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-	background-color:#181b20;
+#introduction p {
+    line-height:1.4;
 }
 
-.logo { 
-    grid-area: 1 / 1 / 2 / 5; 
-    margin:15px;
+#introduction span {
+    padding: 0px 10px;
+    background-color: #ff8585;
+	font-weight: 100;
 }
 
-.logo h2 {
-	font-size: 1.2em;
+#social {
+	word-spacing: 1rem;
 }
 
-.hamburger { 
-	grid-area: 1 / 5 / 2 / 6;
-    margin:9px 15px;
-    text-align:right;    
+#main-nav ul {
+    padding: 0;
+    margin: 0;
 }
 
-.main-nav {
-	grid-area: 2 / 1 / 3 / 6;
-	display:none;
-    width:100%;
-}
-
-.main-nav ul {
-    padding:0;
-    margin:0;
-}
-
-.main-nav ul li {
-	list-style: none;
-	display:flex;
-	text-align:center;
-}
-
-.main-nav ul li a {
-	padding:15px;
-	width:100%;
+#main-nav ul li {
+	padding: 0.5rem 0;
     list-style: none;
 }
 
-.special #github {
-	background-color:#000;
-}
-
-.special #linkedin {
-	background-color:#007bb5;
-}
-
-.main-nav ul li a:hover {
-    background:#262b33;
-}
-
-.cloud-tag {
-    padding:5px 20px;
-    margin:0 10px 10px 0;
-    border:1px solid #e77edc;
-    background-color:#e77edc30;
-    border-radius:15px;
-    text-align:center;
-    display:inline-block;
-    vertical-align:middle;
-}
-
-.programming-tag {
-    padding:5px 20px;
-    margin:0 10px 10px 0;
-    border:1px solid #d0e77e;
-    background-color:#d0e77e30;
-    border-radius:15px;
-    text-align:center;
-    display:inline-block;
-    vertical-align:middle;
-}
-
-.tooling-tag {
-    padding:5px 20px;
-    margin:0 10px 10px 0;
-    border:1px solid #7ec9e7;
-    background-color:#7ec9e730;
-    border-radius:15px;
-    text-align:center;
-    display:inline-block;
-    vertical-align:middle;
-}
-
-.misc-tag {
-	padding:5px 20px;
-    margin:0 10px 10px 0;
-	background-color:#ffffff30;
-    border:1px solid #fff;
-    background-color:#ffffff30;
-    border-radius:15px;
-    text-align:center;
-    display:inline-block;
-    vertical-align:middle;
-}
-
-.project-container #project {
-	padding:20px;
-    margin:20px -20px;
-	background-color:#262b33;
-}
-
-.project-container #project img {
-	padding: 0;
-	margin: 15px 0 0 0;
-	width: 100%;
-}
-
-.project-container #button a {
-	padding: 7px;
-	margin: 7px 0;
-	background-color: #238636;
-	display: block;
-}
-
-.project-container #button a:hover {
-	background-color: #156a25;
-}
-
-.project-container h3 {
-	padding:0;
-    margin:0;
-}
-
-#contact form {
-	padding: 0;
-	margin: 0;
-	display: inline-grid;
-	width: 100%;
-}
-
-#contact form input, textarea {
-	padding: 7px;
-	margin: 0 0 15px 0;
-	font-family: inherit;
-	font-size: 0.9em;
-	resize: vertical;
-}
-
-#contact form input[type=submit] {
-	background-color: #238636;
-	color: white;
-	border: none;
-}
-
-#contact form input[type=submit]:hover {
-	background-color: #156a25;
-}
-
-/* Desktop design */
-
 @media screen and (min-width: 800px) {
-	.parent {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	
-	.hamburger { 
-		display:none;
-	}
-	
-	.main-nav {
-		grid-area: 1 / 5 / 3 / 6;
-		display:block;
-	}
-	
-	.main-nav ul li {
-		list-style: none;
-		display:inline-flex;
-		text-align:center;
-	}
+    #wrapper {
+        margin: 15rem;
+    }
 
-	.main-nav ul li a {
-		padding:17px;
-		width:100%;
-		list-style: none;
-	}
-
-	.special #github {
-		background-color:#0000;
-		width:20px;
-	}
-
-	.special #linkedin {
-		background-color:#0000;
-		width:20px;
-	}
-	
-	#welcome {
-		background-color:#262b33;
-		clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
-		height:280px;
-		padding:2% 15%;
-		margin:-20px;
-		text-align:center;
-	}
-	
-	#welcome h1 {
-		font-size:2.2em;
-	}
-	
-	#what-can-i-do {
-		padding:0 20%;
-	}
-	
-	#what-i-want {
-		padding:20px 20%;
-		float:right;
-		text-align:left;
-	}
-	
-	#past-projects h1 {
-		text-align:center;
-	}
-	
-	.project-container {
-		text-align: center;		
-		margin: 0 auto;
-		width: 100%;
-	}
-	
-	.project-container #project {
-		min-width:350px;
-		max-width:500px;
-		width: 25%;
-		margin: 1%;
-		background-color: #262b33;
-		display: inline-block;
-		min-height: 350px;
-		vertical-align: top;
-	}
-	
-	#contact {
-		padding:20px 20%;
-	}
+    #introduction p {
+        width: 65%;
+    }
 }
