@@ -1,68 +1,22 @@
 body {
     padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
+    margin: 4rem;
     background-color: #181b20;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: calibri, sans-serif;
 }
 
 a {
     text-decoration: none;
 	color: #fff;
+    padding-right: 1rem;
 }
 
-#wrapper {
-    margin: 2rem;
+p {
+    font-family: monospace;
 }
 
-#logo {
-    font-size: 1.1em;
-}
-
-#introduction {
-    padding-left: 1rem;
-    margin: 3.9rem 0rem;
-    border-left: 2px solid #fff;
-}
-
-#introduction h1 {
-    line-height: 1.55;
-    font-weight: normal;
-}
-
-#introduction p {
-    line-height:1.4;
-}
-
-#introduction span {
-    padding: 0px 10px;
-    background-color: #ff8585;
-	font-weight: 100;
-}
-
-#social {
-	word-spacing: 1rem;
-}
-
-#main-nav ul {
-    padding: 0;
-    margin: 0;
-}
-
-#main-nav ul li {
-	padding: 0.5rem 0;
-    list-style: none;
-}
-
-@media screen and (min-width: 800px) {
-    #wrapper {
-        margin: 25vh;
-    }
-
-    #introduction p {
-        width: 65%;
-    }
+#section-break {
+    margin-top: 10rem;
 }
